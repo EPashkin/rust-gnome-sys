@@ -154,6 +154,7 @@ bitflags! {
 
 // Unions
 pub type GTypeCValue = c_void; // union
+pub type GValue_data = c_void; // union
 
 // Callbacks
 pub type GBaseFinalizeFunc = Option<unsafe extern "C" fn(gpointer)>;
