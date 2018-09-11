@@ -16,7 +16,7 @@ script:
     make regen_check;
     fi
   - mkdir .cargo
-  - echo 'paths = ["."]' > .cargo/config
-  - git clone -q --depth 50 -b pending https://github.com/gtk-rs/examples _examples
+  - git clone -q --depth 50 -b pending https://github.com/EPashkin/examples _examples
   - cd _examples
+  - python3 replace_patchs.py sys
   - ./build_travis.sh
